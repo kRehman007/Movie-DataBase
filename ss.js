@@ -2,20 +2,21 @@ const shows = document.querySelector('.shows');
 
 async function fetching(f, l, val = '') {
     const url = 'https://imdb-top-100-movies.p.rapidapi.com/';
-    const options = {
-        method: 'GET',
-        headers: {
-            'x-rapidapi-key': '57e4c1f024msh65806f7cbc1e610p140fb0jsneb70314798ba',
-            'x-rapidapi-host': 'imdb-top-100-movies.p.rapidapi.com'
-        }
-    };
+const options = {
+	method: 'GET',
+	headers: {
+		'x-rapidapi-key': '01727b1e60msh9dd2dbf6def5519p15a515jsne0273b058a2b',
+		'x-rapidapi-host': 'imdb-top-100-movies.p.rapidapi.com'
+	}
+};
 
-    try {
+try {
         const response = await fetch(url, options);
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
         let result = await response.json();
+        
         if (val !== '') {
             result = result.filter((res) => res.title.includes(val));
         }
