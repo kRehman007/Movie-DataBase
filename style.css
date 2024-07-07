@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poopins',sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: darkcyan;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 25px;
+    
+
+}
+.header img{
+    width: 60px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.header .icon{
+    cursor: pointer;
+}
+.clone{
+    width: 100%;
+    background-color: darkslateblue;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+.menu{
+    width: 100%;
+    color: #000;
+    background-color: #eee;
+    border-bottom: 1px solid gray;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+
+}
+.menu .schBox{
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+}
+.menu .schBox i{
+    color: gray;
+    font-size: 15px;
+    cursor: pointer;
+}
+.menu input{
+    padding: 10px 20px;
+    border:none;
+    outline: none;
+    background-color: #eee;  
+
+    
+}
+.menu input::placeholder{
+    font-size: 16px;
+    
+}
+
+.shows{
+    margin-top: 38px;    
+}
+.box1{
+    display: flex;
+    border: 1px solid lightgray;
+    margin: 40px 10px;
+    border-radius: 5px;
+}
+.box1 .image{
+    width: 40%;
+    border-right: 1px solid gray;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box1 .about{
+    margin-left: 12px;
+    margin-top: 12px;
+}
+.box1 .about .date{
+    margin-left: 5px;
+    color: gray;
+}
+.box1 .about .des{
+    margin-top: 17px;
+    margin-left: 5px;
+    margin-bottom: 19px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.btn button{
+    padding: 10px 25px;
+    background-color: darkslateblue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.footer{
+    padding-top: 60px;
+    padding-left: 20px;
+    color: #fff;
+    background-color: darkcyan;
+    font-weight: 500;
+}
+.footer h1{
+    padding-bottom: 5px;
+}
+.footer ul{
+    padding-bottom: 30px;
+}
+.footer ul li{
+    list-style: none;
+    padding: 5px;
+}
+
