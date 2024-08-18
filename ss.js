@@ -1,14 +1,14 @@
 const shows = document.querySelector('.shows');
 
 async function fetching(f, l, val = '') {
-    const url = 'https://imdb-top-100-movies.p.rapidapi.com/';
-const options = {
-	method: 'GET',
-	headers: {
-		'x-rapidapi-key': '01727b1e60msh9dd2dbf6def5519p15a515jsne0273b058a2b',
-		'x-rapidapi-host': 'imdb-top-100-movies.p.rapidapi.com'
-	}
-};
+  const url = 'https://imdb-top-100-movies.p.rapidapi.com/';
+    const options = {
+        method: 'GET',
+        headers: {
+            'x-rapidapi-key': 'b6ebbe8c1amsha81a0fd72b247a9p1766e8jsnc82b60330e20',
+            'x-rapidapi-host': 'imdb-top-100-movies.p.rapidapi.com'
+        }
+    };
 
 try {
         const response = await fetch(url, options);
